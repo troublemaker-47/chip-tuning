@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="contactus.css">
+  <script src="contactus.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="../index.html">Home</a> | <a href="#">Contact Us</a>
+  </nav>
+  <h1>Contact Us</h1>
+  <p>Submit a car repair request and we'll get back to you as soon as possible.</p>
+
+<!--<form onsubmit="sendForm(); return false;">-->
+<form action="mailto:vladslimovschi@gmail.com" method="post" enctype="text/plain">
+
+  <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="phone">Phone:</label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <label for="make">Car Make:</label><br>
+    <input type="text" id="make" name="make"><br>
+    <label for="model">Car Model:</label><br>
+    <input type="text" id="model" name="model"><br>
+    <label for="year">Car Year:</label><br>
+    <input type="text" id="year" name="year"><br>
+    <label for="problem">Problem:</label><br>
+    <textarea id="problem" name="problem" style="width:250px"></textarea><br>
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>
